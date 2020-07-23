@@ -1,10 +1,36 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Cinzel', serif;
+    background-color: var(--color2);
+
+    --color1: #9a6d41;
+    --color2: #efe9cf;
+    --color3: #daa520;
+    --color4: #49382b;
+    
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--color1);
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+
+}
+
+form {
+    display: block;
+    margin: 40px;
+    padding: 10px;
+    font-family: 'Red Rose', cursive;
 }
