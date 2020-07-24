@@ -45,10 +45,10 @@ button {
     margin: 20px;
     padding: 5px;
     border-radius: 2px;
-    opacity: 0.2;
-    background-color: var(--color1)
+    opacity: 0.5;
+    color: var(--color1);
     color: var(--color4);
-    border: solid var(--color4)
+    border: solid var(--color4);
 }
 
 button:hover{
@@ -59,10 +59,9 @@ button:hover{
 label {
     display: inline-block;
     vertical-align: middle;
-    opacity: 0.2;
-    background-color: var(--color1)
+    opacity: 0.7;
     color: var(--color4);
-    border: solid var(--color4)
+    border: solid var(--color4);
 }
 
 label:hover {

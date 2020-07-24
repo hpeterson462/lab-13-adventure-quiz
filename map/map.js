@@ -5,7 +5,7 @@ const user = getUser();
 
 if (user.hp <= 0) {
     alert('Your quest has come to an end.');
-    alert('You have ' + user.gold + ' gold.');
+    alert('You have ' + user.gold + ' gold, but your name lives on in books and legends.');
     window.location = '../index.html';
 }
 
@@ -18,11 +18,14 @@ for (let i = 0; i < quests.length; i++) {
 
     if (user.completed[quest.id]) {
         completedQuests++;
+        console.log(completedQuests);
     }
 }
 
 if (completedQuests === quests.length) {
     alert('And you lived happily til the end of your days. You have ' + user.gold + ' gold.');
+
+    window.location = '../';
 }
 
 for (let i = 0; i < quests.length; i++) {
@@ -30,8 +33,8 @@ for (let i = 0; i < quests.length; i++) {
 
     if (user.completed[quest.id]) {
         const span = document.createElement('span');
-        span.textContent = document.createElement('span');
-        span.style.textDecoration = 'strikethrough';
+        span.textContent = quest.title;
+
         section.append(span);
     } else {
         const link = document.createElement('a');

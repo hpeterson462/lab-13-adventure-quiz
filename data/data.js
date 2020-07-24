@@ -35,11 +35,8 @@ const monsters = {
         id: 'lead-them',
         description: 'Lead them into the morning light.',
         result: `
-        You lead them into the rising dawn and they turn to stone!
-        However, as you make your way out the door, a giant spider descends and take a bite of flesh,
-        causing 50 hp damage.
-        `,
-        hp: -50,
+        You lead them into the rising dawn and they turn to stone! A mysterious wizard appears in the morning rays of sunlight. You feel much better and you gain 20hp.`,
+        hp: 20,
         gold: 0
     }]
 };

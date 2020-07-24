@@ -5,7 +5,9 @@ import { findById } from '../user-utils.js';
 const main = document.querySelector('main');
 const params = new URLSearchParams(window.location.search);
 
-const nextButton = document.querySelector('#next');
+const nextButton = document.getElementById('next');
+nextButton.classList.add('hidden');
+
 
 const questId = params.get('id');
 const questData = findById(quests, questId);
@@ -16,3 +18,4 @@ nextButton.addEventListener('click', () => {
 });
 
 main.append(sectionEl);
+

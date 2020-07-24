@@ -51,16 +51,15 @@ export function renderSection(quest) {
 
         setUser(user);
 
-        window.location = '../map/map.html';
+        //window.location = '../map/map.html';
 
         const resultDiv = document.querySelector('#result');
         resultDiv.textContent = results.result;
 
-        const nextButton = document.querySelector('#result');
+        const nextButton = document.getElementById('next');
 
         nextButton.classList.remove('hidden');
     });
-
     form.append(button);
     section.append(div, img, form);
 
