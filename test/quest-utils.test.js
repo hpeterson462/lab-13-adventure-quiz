@@ -53,7 +53,7 @@ test('render quest to page', (expect) => {
 
     //Arrange
     // Set up your arguments and expectations
-    const expected = '<section><div>A Cave of Trolls</div><img src="monsters.jpg">< form ><div>You enter a dark forest and find a cave to shelter in for the night. But it is already occupied by three, large trolls! And they look hungry. What do you do?</div><label><div>Beg for your life.</div><input type="radio" name="choices" value="choices.id"></label>< label ><div>Attack!</div><input type="radio" name="choices" value="choice.id"></label ><label>< div > Lead them into the morning light.</div><input type="radio" name="choices" value="choice.id"></label><button>Submit</button></form ></section > '.replace(/\s/g, '');
+    const expected = '<section><div>A Cave of Trolls</div><img src="monsters.jpg">< form ><div>You enter a dark forest and find a cave to shelter in for the night. But it is already occupied by three, large trolls! And they look hungry. What do you do?</div><label><div>Beg for your life.</div><input type="radio" name="choices" value="beg"></label>< label ><div>Attack!</div><input type="radio" name="choices" value="attack"></label ><label>< div > Lead them into the morning light.</div><input type="radio" name="choices" value="lead-them"></label><button>Submit</button></form ></section > '.replace(/\s/g, '');
 
     //Act 
     // Call the function you're testing and set the result to a const

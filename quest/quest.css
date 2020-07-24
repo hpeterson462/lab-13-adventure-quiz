@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    background-image: url(../assets/middle-earth-map.png);
+
+
+    --color1: #9a6d41;
+    --color2: #efe9cf;
+    --color3: #daa520;
+    --color4: #49382b;
+    
+}
+
+section {
+    background-color: var(--color2);
+}

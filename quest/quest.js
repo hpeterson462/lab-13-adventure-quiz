@@ -4,6 +4,7 @@ import { findById } from '../user-utils.js';
 
 const main = document.querySelector('main');
 const params = new URLSearchParams(window.location.search);
+
 const nextButton = document.querySelector('#next');
 
 const questId = params.get('id');

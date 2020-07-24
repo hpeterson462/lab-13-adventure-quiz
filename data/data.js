@@ -32,7 +32,7 @@ const monsters = {
         hp: -30,
         gold: 50
     }, {
-        id: 'lead-tem',
+        id: 'lead-them',
         description: 'Lead them into the morning light.',
         result: `
         You lead them into the rising dawn and they turn to stone!
@@ -52,17 +52,15 @@ const dragon = {
         left: '67%'
     },
     image: 'dragon.jpg',
-    audio: 'dragon.wav',
-    action: 'dragon-growl.aiff',
     description: `
-        You travel to a nearby village you have heard is being
-        terrorized by a dragon. Sure enough as you rent a room
-        in a local inn, you go outside and see the dragon about
+        You travel to a nearby town you have heard is being
+        terrorized by a dragon. Sure enough, as you rent a room
+        in a local inn, you go outside and see Smaug about
         to lay seige! What do you do?
     `,
     choices: [{
         id: 'run',
-        description: 'Get the hell out of the village',
+        description: 'Get the hell out of Laketown!',
         result: `
             You high tail it in the opposite direction. Luckily,
             in the panic you find a bag on the ground with 15 gold.
@@ -73,26 +71,22 @@ const dragon = {
         gold: 35
     }, {
         id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        description: 'CHAAARRRGGGE!',
         result: `
             You attempt to charge towards the dragon, who sees you approach
-            and let's loose a fireball. You wake up the next morning and the
-            village has been completely burned to the ground.
+            and let's loose a fireball. You wake up the next morning and Laketown has been completely burned to the ground.
             Oh, and you take 45 hp damage.
         `,
         hp: -45,
         gold: 0
     }, {
         id: 'archer',
-        description: 'Emulate that guy from LOR who shot an arrow',
+        description: 'Emulate Bard the Bowman.',
         result: `
-            Inspired by the legend of Bard the Bowman, you notice a
-            stunned archer standing nearby and take their bow and quiver,
+            You notice a stunned archer standing nearby and take their bow and quiver,
             climb to the top of a tall tower and take aim. On the dragon's
-            next pass you steady your aim and let one fly. Amazingly,
-            you strike the dragon in the eye, piercing into the brain and
-            killing the dragon instantly. The villagers declare you their hero
-            and award you 90 gold.
+            next pass, you steady your aim and let one fly. Amazingly,
+            you pierce the dragon between its scales! You kill the dragon instantly. The villagers declare you their hero and award you 90 gold.
         `,
         hp: 0,
         gold: 90
@@ -107,14 +101,9 @@ const treasure = {
         left: '5%'
     },
     image: 'treasure-chests.png',
-    audio: 'treasure-chests.wav',
-    action: 'chest-opening.wav',
     description: `
-        As you enter the quest chamber you notice three chests before you.
-        Just as you start to imagine the wealth, you see a giant serpent
-        emerge from the back of the chamber. You'll need to make a run for it,
-        but you have time to open one chest before you take off. Which one 
-        do you choose?
+        As you enter the dragon's chamber, you notice three chests before you.
+        Just as you start to imagine the wealth, thirteen dwarves appear at the doorway. They cry out! And rush forwards. In the confusion, they yell something about heirlooms and family trees. They try to take the treasure! You'll need to make a run for it, but you have time to open one chest before you take off. Which one do you choose?
     `,
     choices: [{
         id: 'wooden',
@@ -125,13 +114,13 @@ const treasure = {
     }, {
         id: 'golden',
         description: 'A Golden Chest',
-        result: 'Oh no! The chest is booby trapped with poison and you take 50 hp damage',
+        result: 'Oh no! The chest is booby trapped! You take 50 hp damage',
         hp: -50,
         gold: 0
     }, {
         id: 'jeweled',
         description: 'A Jeweled Chest',
-        result: 'A warm light engulfs you and you gain 35 hp',
+        result: 'A warm light engulfs you from a beautiful jewel. You gain 35 hp',
         hp: 35,
         gold: 0
     }]
