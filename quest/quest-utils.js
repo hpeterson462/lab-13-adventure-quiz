@@ -49,7 +49,7 @@ export function renderSection(quest) {
         user.hp += results.hp;
         user.completed[quest.id] = true;
 
-        setUser();
+        setUser(user);
 
         window.location = '../map/map.html';
 

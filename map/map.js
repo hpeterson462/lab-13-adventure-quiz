@@ -6,7 +6,7 @@ const user = getUser();
 if (user.hp <= 0) {
     alert('Your quest has come to an end.');
     alert('You have ' + user.gold + ' gold.');
-    window.location('../index.html');
+    window.location = '../index.html';
 }
 
 const section = document.querySelector('section');

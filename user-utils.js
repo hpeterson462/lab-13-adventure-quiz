@@ -9,13 +9,16 @@ export function makeUser(formData) {
 }
 
 export function getUser() {
-    return JSON.parse(localStorage.getItem('USER'));
+    const localStorageUser = localStorage.getItem('USER');
+
+    return JSON.parse(localStorageUser);
 }
 
 export function setUser(user) {
     const stringyUser = JSON.stringify(user);
     return localStorage.setItem('USER', stringyUser);
 }
+
 
 
 export function findById(array, id) {
