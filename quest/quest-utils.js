@@ -13,6 +13,7 @@ export function renderSection(quest) {
     const form = document.createElement('form');
     const description = document.createElement('div');
     description.textContent = quest.description;
+    description.style.backgroundColor = 'var(--color2)';
     form.append(description);
 
     for (let i = 0; i < quest.choices.length; i++) {
@@ -55,6 +56,7 @@ export function renderSection(quest) {
 
         const resultDiv = document.querySelector('#result');
         resultDiv.textContent = results.result;
+        resultDiv.style.backgroundColor = 'var(--color2)';
 
         const nextButton = document.getElementById('next');
 
