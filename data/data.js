@@ -12,7 +12,7 @@ const monsters = {
     `,
     choices: [{
         id: 'beg',
-        description: 'Beg for you life.',
+        description: 'Beg for your life.',
         result: `
         Knowing that trolls are not too bright, you offer to go buy them all
         turkey dinners from the Prancing Pony. They give you 35 gold for meals

@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Cinzel', serif;
-    background-color: var(--color2);
+    background-image: url(../assets/middle-earth-map.png);
+
 
     --color1: #9a6d41;
     --color2: #efe9cf;
@@ -22,22 +23,51 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--color2);
 }
 
 form {
-    display: block;
-
+    display: inline-block;
     margin: 40px;
     padding: 10px;
     font-family: 'Red Rose', cursive;
+    position: absolute;
+    bottom: 0px;
+}
+
+legend {
+    color: var(--color4);
+    background-color: var(--color2);
 }
 
 button {
     cursor: pointer;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 2px;
+    opacity: 0.2;
+    background-color: var(--color1)
+    color: var(--color4);
+    border: solid var(--color4)
+}
+
+button:hover{
+    opacity: 1;
+    background-color: var(--color2);
 }
 
 label {
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.2;
+    background-color: var(--color1)
+    color: var(--color4);
+    border: solid var(--color4)
+}
+
+label:hover {
+    opacity: 1;
+    background-color: var(--color2);
 }
 
 .hidden {

@@ -20,7 +20,7 @@ test('render quest to page', (expect) => {
         `,
         choices: [{
             id: 'beg',
-            description: 'Beg for you life.',
+            description: 'Beg for your life.',
             result: `
                 Knowing that trolls are not too bright, you offer to go buy them all
                 turkey dinners from the Prancing Pony. They give you 35 gold for meals
@@ -53,7 +53,7 @@ test('render quest to page', (expect) => {
 
     //Arrange
     // Set up your arguments and expectations
-    const expected = '<section><div>A Cave of Trolls</div><img src="monsters.jpg">< form ><div>You enter a dark forest and find a cave to shelter in for the night. But it is already occupied by three, large trolls! And they look hungry. What do you do?</div><label><div>Beg for your life.</div><input type="radio" name="choices" value="choices.id"></label>< label ><div>Attack!</div><input type="radio" name="choices" value="choices.id"></label ><label>< div > Lead them into the morning light.</div><input type="radio" name="choices" value="choices.id"></label><button>Submit</button></form ></section > '.replace(/\s/g, '');
+    const expected = '<section><div>A Cave of Trolls</div><img src="monsters.jpg">< form ><div>You enter a dark forest and find a cave to shelter in for the night. But it is already occupied by three, large trolls! And they look hungry. What do you do?</div><label><div>Beg for your life.</div><input type="radio" name="choices" value="choices.id"></label>< label ><div>Attack!</div><input type="radio" name="choices" value="choice.id"></label ><label>< div > Lead them into the morning light.</div><input type="radio" name="choices" value="choice.id"></label><button>Submit</button></form ></section > '.replace(/\s/g, '');
 
     //Act 
     // Call the function you're testing and set the result to a const
@@ -61,5 +61,5 @@ test('render quest to page', (expect) => {
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(element.outerHTML, expected);
+    expect.equal(element.outerHTML.replace(/\s/g, ''), expected);
 });

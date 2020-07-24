@@ -18,14 +18,14 @@ export function renderSection(quest) {
     for (let i = 0; i < quest.choices.length; i++) {
         const label = document.createElement('label');
         const labelDiv = document.createElement('div');
-        const choices = quest.choices[i];
+        const choice = quest.choices[i];
 
-        labelDiv.textContent = choices.description;
+        labelDiv.textContent = choice.description;
         const input = document.createElement('input');
 
         input.type = 'radio';
         input.name = 'choices';
-        input.value = 'choices.id';
+        input.value = 'choice.id';
 
         label.append(labelDiv, input);
         form.append(label);
@@ -36,6 +36,7 @@ export function renderSection(quest) {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+
         //data from radio button
         const formData = new FormData(form);
         const choiceId = formData.get('choices');
@@ -48,16 +49,16 @@ export function renderSection(quest) {
         user.hp += results.hp;
         user.completed[quest.id] = true;
 
-        window.location = './map/map.html';
-
         setUser();
 
-        const resultDiv = document.querySelector('#result');
-        resultDiv.textContent = results.result;
+        window.location = '../map/map.html';
 
-        const nextButton = document.querySelector('#result');
-
-        nextButton.classList.remove('hidden');
+        /* const resultDiv = document.querySelector('#result');
+         resultDiv.textContent = results.result;
+ 
+         const nextButton = document.querySelector('#result');
+ 
+         nextButton.classList.remove('hidden');*/
     });
 
     form.append(button);
