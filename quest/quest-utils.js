@@ -52,8 +52,6 @@ export function renderSection(quest) {
 
         setUser(user);
 
-        //window.location = '../map/map.html';
-
         const resultDiv = document.querySelector('#result');
         resultDiv.textContent = results.result;
         resultDiv.style.backgroundColor = 'var(--color2)';
