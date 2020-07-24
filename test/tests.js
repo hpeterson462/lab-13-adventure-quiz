@@ -1,1 +1,1 @@
-import './example.test.js';
+import './quest-utils.test.js';

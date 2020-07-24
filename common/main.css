@@ -24,13 +24,22 @@ h2 {
     align-items: center;
 }
 
-main {
-
-}
-
 form {
     display: block;
+
     margin: 40px;
     padding: 10px;
     font-family: 'Red Rose', cursive;
+}
+
+button {
+    cursor: pointer;
+}
+
+label {
+    display: block;
+}
+
+.hidden {
+    display: none;
 }

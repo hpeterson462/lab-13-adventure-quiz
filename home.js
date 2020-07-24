@@ -11,8 +11,8 @@ form.addEventListener('submit', (e) => {
 
     const user = makeUser(formData);
 
-    console.log(user);
-
     const stringyUser = JSON.stringify(user);
     localStorage.setItem('USER', stringyUser);
+
+    window.location = './map/map.html';
 });

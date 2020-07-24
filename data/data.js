@@ -1,42 +1,43 @@
 const monsters = {
     id: 'monsters',
-    title: 'A Den of Monsters',
+    title: 'A Cave of Trolls',
     map: {
         top: '89%',
         left: '44%'
     },
     image: 'monsters.jpg',
     description: `
-        You enter the quest chamber only to be confronted by a hoard of
-        monsters. And they look hungry. What do you do?
+    You enter a dark forest and find a cave to shelter in for the night. But it is already occupied by
+    three, large trolls! And they look hungry. What do you do?
     `,
     choices: [{
-        id: 'negotiate',
-        description: 'Negotiate with them',
+        id: 'beg',
+        description: 'Beg for you life.',
         result: `
-            Knowing the monsters are not too bright, you offer to go buy them all
-            turkey dinners from the village pub. They give you 35 gold for meals
-            that will never be delivered. I hope you can live with yourself. 
+        Knowing that trolls are not too bright, you offer to go buy them all
+        turkey dinners from the Prancing Pony. They give you 35 gold for meals
+        that will never be delivered. I hope you can live with yourself.  
         `,
         hp: 0,
         gold: 35
     }, {
-        id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        id: 'attack',
+        description: 'Attack!',
         result: `
-            Brandishing your sword you let out a warrior's cry and charge into the monsters
-            hacking and slashing. Before long you stand panting gazing across the bodies of
-            your vanquished foes. The bad news is you take 30 hp damage. The good news is you
-            find 50 gold.
+        Brandishing your sword you let out a warrior's cry and charge into the trolls
+        hacking and slashing. Before long you stand panting gazing across the bodies of
+        your vanquished foes. The bad news is you take 30 hp damage. The good news is you
+        find 50 gold.
         `,
         hp: -30,
         gold: 50
     }, {
-        id: 'run',
-        description: 'Run away like good Sir Robin',
+        id: 'lead-tem',
+        description: 'Lead them into the morning light.',
         result: `
-            As you make a dash for the door a giant spider descends and take a bite of flesh,
-            causing 50 hp damage.
+        You lead them into the rising dawn and they turn to stone!
+        However, as you make your way out the door, a giant spider descends and take a bite of flesh,
+        causing 50 hp damage.
         `,
         hp: -50,
         gold: 0
