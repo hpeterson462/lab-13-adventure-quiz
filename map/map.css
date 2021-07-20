@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    background-image: url(../assets/middle-earth-map.png);
+
+
+    --color1: #9a6d41;
+    --color2: #efe9cf;
+    --color3: #daa520;
+    --color4: #49382b;
+}
+
+a {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Red Rose', cursive;
+    background-color: var(--color2);
+    color: var(--color1);
+    border-radius: 2px;;
+    max-width: 400px;
+}
+
+a:hover {
+ color: var(--color4);
+}
